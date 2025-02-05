@@ -105,7 +105,7 @@ namespace ContatosApiTest
                 Id = 1,
                 Nome = "João",
                 Sobrenome = "Silva",
-                DataNascimento = new DateTime(2025, 2, 4),
+                DataNascimento = DateTime.Now.AddDays(1),
                 Sexo = "Masculino",
                 DataCriacao = DateTime.UtcNow,
                 Ativo = true
