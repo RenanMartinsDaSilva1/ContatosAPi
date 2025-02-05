@@ -9,6 +9,8 @@
       "ContatosApi/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "ContatosData": "1.0.0",
+          "ContatosDomain": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "9.0.1",
           "Microsoft.AspNetCore.OpenApi": "9.0.1",
           "Microsoft.Data.SqlClient": "6.0.1",
@@ -1013,6 +1015,28 @@
             "fileVersion": "2.9.3.0"
           }
         }
+      },
+      "ContatosData/1.0.0": {
+        "dependencies": {
+          "ContatosDomain": "1.0.0",
+          "Microsoft.Data.SqlClient": "6.0.1",
+          "Microsoft.EntityFrameworkCore": "9.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.1"
+        },
+        "runtime": {
+          "ContatosData.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ContatosDomain/1.0.0": {
+        "runtime": {
+          "ContatosDomain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1623,6 +1647,16 @@
       "sha512": "sha512-kf3si0YTn2a8J8eZNb+zFpwfoyvIrQ7ivNk5ZYA5yuYk1bEtMe4DxJ2CF/qsRgmEnDr7MnW1mxylBaHTZ4qErA==",
       "path": "xunit.extensibility.core/2.9.3",
       "hashPath": "xunit.extensibility.core.2.9.3.nupkg.sha512"
+    },
+    "ContatosData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ContatosDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

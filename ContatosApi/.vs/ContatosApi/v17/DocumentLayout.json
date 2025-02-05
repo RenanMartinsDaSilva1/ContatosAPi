@@ -1,25 +1,19 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Renan Martins da Silva\\ContatosApi\\",
+  "WorkspaceRootPath": "C:\\Projetos\\ContatosAPi\\ContatosApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30C05A56-E95B-45D5-8B8D-D853C4FFE5DB}|..\\ContatosApiTest\\ContatosApiTest.csproj|c:\\renan martins da silva\\contatosapitest\\contatonegociotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30C05A56-E95B-45D5-8B8D-D853C4FFE5DB}|..\\ContatosApiTest\\ContatosApiTest.csproj|c:\\projetos\\contatosapi\\contatosapitest\\contatoservicotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|c:\\renan martins da silva\\contatosapi\\models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|solutionrelative:models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D68CCF09-FC0F-43C6-A67D-98429C819572}|..\\ContatosData\\ContatosData.csproj|c:\\projetos\\contatosapi\\contatosdata\\repositorio\\repositoriobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|c:\\renan martins da silva\\contatosapi\\negocio\\contatonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|solutionrelative:negocio\\contatonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3E92A28-BE27-43B7-8A7B-AA030F7CF9AE}|..\\ContatosDomain\\ContatosDomain.csproj|c:\\projetos\\contatosapi\\contatosdomain\\servicos\\contatoservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|c:\\renan martins da silva\\contatosapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|c:\\projetos\\contatosapi\\contatosapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|solutionrelative:controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|c:\\renan martins da silva\\contatosapi\\negocio\\icontatonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8EAAA70-19E7-44DF-B9D9-2C6EF872AD12}|ContatosApi.csproj|solutionrelative:negocio\\icontatonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,87 +23,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 261,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 261,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepositorioBase.cs",
+              "DocumentMoniker": "C:\\Projetos\\ContatosAPi\\ContatosData\\Repositorio\\RepositorioBase.cs",
+              "RelativeDocumentMoniker": "..\\ContatosData\\Repositorio\\RepositorioBase.cs",
+              "ToolTip": "C:\\Projetos\\ContatosAPi\\ContatosData\\Repositorio\\RepositorioBase.cs",
+              "RelativeToolTip": "..\\ContatosData\\Repositorio\\RepositorioBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T02:01:15.796Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ContatoNegocioTest.cs",
-              "DocumentMoniker": "C:\\Renan Martins da Silva\\ContatosApiTest\\ContatoNegocioTest.cs",
-              "RelativeDocumentMoniker": "..\\ContatosApiTest\\ContatoNegocioTest.cs",
-              "ToolTip": "C:\\Renan Martins da Silva\\ContatosApiTest\\ContatoNegocioTest.cs",
-              "RelativeToolTip": "..\\ContatosApiTest\\ContatoNegocioTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKYAAAABAAAAAAAAAA==",
+              "Title": "ContatoServicoTest.cs",
+              "DocumentMoniker": "C:\\Projetos\\ContatosAPi\\ContatosApiTest\\ContatoServicoTest.cs",
+              "RelativeDocumentMoniker": "..\\ContatosApiTest\\ContatoServicoTest.cs",
+              "ToolTip": "C:\\Projetos\\ContatosAPi\\ContatosApiTest\\ContatoServicoTest.cs",
+              "RelativeToolTip": "..\\ContatosApiTest\\ContatoServicoTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:40:35.578Z",
+              "WhenOpened": "2025-02-04T01:30:22.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContatoServico.cs",
+              "DocumentMoniker": "C:\\Projetos\\ContatosAPi\\ContatosDomain\\Servicos\\ContatoServico.cs",
+              "RelativeDocumentMoniker": "..\\ContatosDomain\\Servicos\\ContatoServico.cs",
+              "ToolTip": "C:\\Projetos\\ContatosAPi\\ContatosDomain\\Servicos\\ContatoServico.cs",
+              "RelativeToolTip": "..\\ContatosDomain\\Servicos\\ContatoServico.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T01:05:45.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ContatoController.cs",
-              "DocumentMoniker": "C:\\Renan Martins da Silva\\ContatosApi\\Controllers\\ContatoController.cs",
+              "DocumentMoniker": "C:\\Projetos\\ContatosAPi\\ContatosApi\\Controllers\\ContatoController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContatoController.cs",
-              "ToolTip": "C:\\Renan Martins da Silva\\ContatosApi\\Controllers\\ContatoController.cs",
+              "ToolTip": "C:\\Projetos\\ContatosAPi\\ContatosApi\\Controllers\\ContatoController.cs",
               "RelativeToolTip": "Controllers\\ContatoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T16:43:08.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContatoNegocio.cs",
-              "DocumentMoniker": "C:\\Renan Martins da Silva\\ContatosApi\\Negocio\\ContatoNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\ContatoNegocio.cs",
-              "ToolTip": "C:\\Renan Martins da Silva\\ContatosApi\\Negocio\\ContatoNegocio.cs",
-              "RelativeToolTip": "Negocio\\ContatoNegocio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T17:07:13.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IContatoNegocio.cs",
-              "DocumentMoniker": "C:\\Renan Martins da Silva\\ContatosApi\\Negocio\\IContatoNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\IContatoNegocio.cs",
-              "ToolTip": "C:\\Renan Martins da Silva\\ContatosApi\\Negocio\\IContatoNegocio.cs",
-              "RelativeToolTip": "Negocio\\IContatoNegocio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T17:07:38.701Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 261,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Contato.cs",
-              "DocumentMoniker": "C:\\Renan Martins da Silva\\ContatosApi\\Models\\Contato.cs",
-              "RelativeDocumentMoniker": "Models\\Contato.cs",
-              "ToolTip": "C:\\Renan Martins da Silva\\ContatosApi\\Models\\Contato.cs",
-              "RelativeToolTip": "Models\\Contato.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA1wDYAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T17:20:04.624Z",
+              "WhenOpened": "2025-02-04T00:56:59.959Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,46 @@
+# Visual Studio specific
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Package Management
+*.nupkg
+packages/
+project.lock.json
+package-lock.json
+node_modules/
+
+# Visual Studio Code settings
+.vscode/
+
+# Publish and Deployment
+.publish/
+*.pubxml
+*.publishproj
+
+# Resharper & Rider
+.idea/
+*.sln.iml
+*_Resharper*/ 
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and databases
+*.log
+*.ldf
+*.mdf
