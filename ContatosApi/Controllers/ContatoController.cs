@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using ContatosApi.Data.Dtos;
-using ContatosApi.Models;
-using ContatosApi.Negocio;
+using ContatosDomain.Interfaces;
+using ContatosDomain.Entidades;
 
 namespace ContatosApi.Controllers
 {
@@ -11,13 +11,13 @@ namespace ContatosApi.Controllers
     public class ContatoController : ControllerBase
     {
         //instanciando
-        
-        private IMapper _mapper;
-        private IContatoNegocio _contatoNegocio;
 
-        public ContatoController(IContatoNegocio contatoNegocio, IMapper mapper)
+        private IMapper _mapper;
+        private IContatoServico _contatoServico;
+
+        public ContatoController(IContatoServico contatoServico, IMapper mapper)
         {
-            _contatoNegocio = contatoNegocio;
+            _contatoServico = contatoServico;
             _mapper = mapper;
         }
 
@@ -29,7 +29,7 @@ namespace ContatosApi.Controllers
             {
                 var contato = _mapper.Map<Contato>(contatoDto);
 
-                var resposta = _contatoNegocio.Adcionar(contato);
+                var resposta = _contatoServico.Insert(contato);
 
                 if (resposta != "OK")
                 {
@@ -48,13 +48,13 @@ namespace ContatosApi.Controllers
         public IEnumerable<ReadContatoDto> RecuperaContato(
             [FromQuery] int skip = 0, [FromQuery] int take = 50)
         {
-            return _mapper.Map<List<ReadContatoDto>>(_contatoNegocio.ObterContatos(skip, take));
+            return _mapper.Map<List<ReadContatoDto>>(_contatoServico.GetAll(skip, take));
         }
 
         [HttpGet("{id}")]
         public IActionResult RecuperaContatoPorId(int id)
         {
-            var contato = _contatoNegocio.ObterContatoPorId(id);
+            var contato = _contatoServico.GetById(id);
             if (contato == null) return NotFound();
             if (contato.Ativo == false) return BadRequest("Id inativo");
 
@@ -65,20 +65,14 @@ namespace ContatosApi.Controllers
         public IActionResult AtualizaContato(int id,
             [FromBody] UpdateContatoDto contatoDto)
         {
-            var contato = _contatoNegocio.ObterContatoPorId(id);
+            var contato = _mapper.Map<Contato>(contatoDto);
 
-            if (contato == null) 
+            contato.Id = id;
+
+            var resposta = _contatoServico.Update(contato);
+
+            if (contato == null)
                 return NotFound();
-
-            if (contato.Ativo == false) 
-                return BadRequest("Id inativo");
-
-            contato.Sobrenome = contatoDto.Sobrenome;
-            contato.DataNascimento = contatoDto.DataNascimento;
-            contato.Sexo = contatoDto.Sexo;
-            contato.Nome = contatoDto.Nome;
-
-            var resposta = _contatoNegocio.Alterar(contato);
 
             if (resposta != "OK")
             {
@@ -86,17 +80,20 @@ namespace ContatosApi.Controllers
             }
 
             return Ok(_mapper.Map<ReadContatoDto>(contato));
-        }        
+        }
 
         [HttpPatch("{id}")]
         public IActionResult InativarContato(int id)
         {
-            var contato = _contatoNegocio.ObterContatoPorId(id);
-            if (contato == null) return NotFound();
+            var contato = _contatoServico.GetById(id);
 
-            if (contato.Ativo == false) return BadRequest("Contato ja inativo");
+            if (contato == null)
+                return NotFound();
 
-            _contatoNegocio.Inativar(contato);
+            if (contato.Ativo == false)
+                return BadRequest("Contato ja inativo");
+
+            _contatoServico.Inativar(contato);
 
             return Ok("Objeto inativado");
         }
@@ -104,10 +101,10 @@ namespace ContatosApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeletaContato(int id)
         {
-            var contato = _contatoNegocio.ObterContatoPorId(id);
+            var contato = _contatoServico.GetById(id);
             if (contato == null) return NotFound();
 
-            _contatoNegocio.Deletar(contato);
+            _contatoServico.Delete(contato);
 
             return NoContent();
         }

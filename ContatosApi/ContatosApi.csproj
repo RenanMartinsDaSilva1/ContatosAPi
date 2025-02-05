@@ -24,7 +24,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Migrations\" />
+	  <ProjectReference Include="..\ContatosData\ContatosData.csproj" />
+	  <ProjectReference Include="..\ContatosDomain\ContatosDomain.csproj" />
 	</ItemGroup>
 
 </Project>

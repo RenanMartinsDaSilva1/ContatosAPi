@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ContatosApi.Data.Dtos;
-using ContatosApi.Models;
+using ContatosDomain.Entidades;
 
 namespace ContatosApi.Profiles
 {

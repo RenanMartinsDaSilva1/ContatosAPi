@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Components.Web;
 
-namespace ContatosApi.Models
+namespace ContatosDomain.Entidades
 {
     public class Contato
     {
@@ -46,56 +45,6 @@ namespace ContatosApi.Models
 
         [Required]
         public bool Ativo { get; set; }
-
-        public string ehValido()
-        {
-            
-            if (EhDataNascimentoEhMaiorQueHoje())
-            {
-                return "A data de nascimento é maior que hoje!";
-            }
-
-            if (EhZeroAnos())
-            {
-                return "Contato possui zero anos!";
-            }
-
-            if (!EhMaiorDeIdade())
-            {
-                return "Contato e menor de idade!";
-            }
-
-            return "Contato valido";
-        }
-
-        private bool EhMaiorDeIdade()
-        {
-            if (Idade >= 18)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        private bool EhZeroAnos()
-        {
-            if (Idade <= 0)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-        private bool EhDataNascimentoEhMaiorQueHoje()
-        {
-            if (DataNascimento.Date > DateTime.Today)
-            {
-                return true;
-            }
-
-            return false;
-        }
 
     }
 }

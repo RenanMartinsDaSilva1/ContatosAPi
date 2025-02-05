@@ -1,18 +1,22 @@
 using ContatosApi.Data;
-using ContatosApi.Negocio;
+using ContatosData.Contexto;
+using ContatosData.Repositorio;
+using ContatosDomain.Interfaces;
+using ContatosDomain.Servicos;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("ContatoConnection");
 
-builder.Services.AddDbContext<ContatoContext>(opts =>
+builder.Services.AddDbContext<MainContext>(opts =>
     opts.UseSqlServer(connectionString));
 
 builder.Services.
     AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddScoped<IContatoNegocio, ContatoNegocio>();
+builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+builder.Services.AddScoped<IContatoServico, ContatoServico>();
 
 // Add services to the container.
 

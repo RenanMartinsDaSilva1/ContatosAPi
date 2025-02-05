@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ContatosApi.Migrations
+namespace ContatosData.Migrations
 {
     /// <inheritdoc />
-    public partial class ContatosApiMedgrupo : Migration
+    public partial class MedApi : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
